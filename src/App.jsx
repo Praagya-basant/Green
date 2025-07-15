@@ -42,7 +42,7 @@ function App() {
         <p className="tagline">Rooted in Nature, Crafted with Purpose.</p>
       </div>
 
-      <h2>Plant Information</h2>
+      {/* <h2>GREEN BASANT</h2> */}
 
       {plant ? (
         <div>

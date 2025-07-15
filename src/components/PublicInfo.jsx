@@ -2,7 +2,7 @@ function PublicInfo({ plant }) {
   return (
     <div className="public-info">
       <img
-        src={plant['Plant Photo']}
+        src={plant['Plant Photo'] || '/plant.jpg'}
         alt="Plant"
         className="plant-photo"
       />
