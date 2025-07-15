@@ -1,71 +1,89 @@
-/* === Global Reset and Base === */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
-  padding: 0;
+  background-color: #f8f9fa;
   color: #2c3e50;
 }
 
-/* === Layout Container === */
 .container {
   max-width: 500px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
+}
+
+/* === Branding === */
+.branding {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 /* === Headings === */
 h2 {
   text-align: center;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-size: 1.6rem;
+  font-size: 20px;
+  color: #212529;
+  margin: 10px 0 20px;
 }
 
-/* === Access Code Section === */
+/* === Access Code === */
 .access-code {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .access-code input {
   padding: 10px;
-  font-size: 16px;
-  flex: 1 1 150px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 300px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
 
 .access-code button {
-  padding: 10px 16px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 15px;
   background-color: #2c3e50;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .access-code button:hover {
-  background-color: #1a252f;
+  background-color: #1f2b36;
 }
 
-/* === Component Cards === */
+/* === Info Cards === */
 .public-info,
 .private-info {
   background-color: white;
   padding: 16px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   margin-bottom: 20px;
 }
 
-/* === Images === */
-.plant-photo,
-.buyer-photo,
 img {
   width: 100%;
   max-width: 220px;
@@ -74,13 +92,19 @@ img {
   border-radius: 10px;
 }
 
-/* === Responsive Text === */
+/* === Text === */
 p {
   font-size: 15px;
-  line-height: 1.4;
   margin: 8px 0;
+  line-height: 1.4;
 }
 
 strong {
   font-weight: 600;
+}
+
+.not-found {
+  text-align: center;
+  color: red;
+  margin-top: 30px;
 }

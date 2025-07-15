@@ -37,10 +37,19 @@ function App() {
 
   return (
     <div className="container">
+      <div className="branding">
+        <img
+          src="https://orangetree.in/cdn/shop/files/BASANT_LOGO_Black_100x@2x.png"
+          alt="Basant Logo"
+          className="logo"
+        />
+        <p className="tagline">Rooted in Nature, Crafted with Purpose.</p>
+      </div>
+
       <h2>Plant Information</h2>
 
       {plant ? (
-        <>
+        <div>
           <PublicInfo plant={plant} />
 
           {!showPrivate && (
@@ -51,14 +60,14 @@ function App() {
                 onChange={(e) => setCode(e.target.value)}
                 placeholder="Enter access code"
               />
-              <button onClick={handleCodeSubmit}>View Full Info</button>
+              <button onClick={handleCodeSubmit}>Unlock Details</button>
             </div>
           )}
 
           {showPrivate && <PrivateInfo plant={plant} />}
-        </>
+        </div>
       ) : (
-        <p>Plant not found</p>
+        <p className="not-found">Plant not found.</p>
       )}
     </div>
   );
