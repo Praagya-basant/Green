@@ -36,15 +36,15 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+    <div className="container">
       <h2>Plant Information</h2>
 
       {plant ? (
-        <div>
+        <>
           <PublicInfo plant={plant} />
 
           {!showPrivate && (
-            <div>
+            <div className="access-code">
               <input
                 type="text"
                 value={code}
@@ -56,7 +56,7 @@ function App() {
           )}
 
           {showPrivate && <PrivateInfo plant={plant} />}
-        </div>
+        </>
       ) : (
         <p>Plant not found</p>
       )}
