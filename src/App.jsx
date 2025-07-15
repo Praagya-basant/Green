@@ -38,11 +38,7 @@ function App() {
   return (
     <div className="container">
       <div className="branding">
-        <img
-          src="https://orangetree.in/cdn/shop/files/BASANT_LOGO_Black_100x@2x.png"
-          alt="Basant Logo"
-          className="logo"
-        />
+        <img src="/logo.png" alt="Basant Logo" className="logo" />
         <p className="tagline">Rooted in Nature, Crafted with Purpose.</p>
       </div>
 
@@ -60,7 +56,7 @@ function App() {
                 onChange={(e) => setCode(e.target.value)}
                 placeholder="Enter access code"
               />
-              <button onClick={handleCodeSubmit}>Unlock Details</button>
+              <button onClick={handleCodeSubmit}>Unlock More Info</button>
             </div>
           )}
 
